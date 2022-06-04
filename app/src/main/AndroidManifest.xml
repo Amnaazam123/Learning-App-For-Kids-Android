@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp">
         <activity
-            android:name=".moreInformation"
-            android:exported="false" />
-        <activity
             android:name=".QuestionDisplay"
             android:exported="false" />
         <activity

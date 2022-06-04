@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class moreInformation extends AppCompatActivity {
+public class learnMoreNames extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_more_information);
+        setContentView(R.layout.activity_learn_more_names);
     }
 }
