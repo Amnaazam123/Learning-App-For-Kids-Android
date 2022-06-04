@@ -7,8 +7,12 @@
     tools:context=".learnMoreNames">
 
     <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listview"/>
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="64dp"
+        tools:listitem="@layout/list_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         learn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Alphabets.class));
+                startActivity(new Intent(MainActivity.this, AlphabetsOrNames.class));
 
             }
         });
