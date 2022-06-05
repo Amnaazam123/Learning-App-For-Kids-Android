@@ -12,4 +12,6 @@
     <string name="q7">Question - 07</string>
     <string name="q8">Question - 08</string>
     <string name="submit">Submit</string>
+    <string name="leanabc">Learn ABC</string>
+    <string name="learnnames">Learn Names</string>
 </resources>
