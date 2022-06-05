@@ -14,6 +14,7 @@ public class learnMoreNames extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_more_names);
+        listview=findViewById(R.id.listview);
         ArrayList<myClass> myClassArrayList = new ArrayList<myClass>();
         myClassArrayList.add(new myClass("Fruit Names","Learn about 10 Fruit Names",R.drawable.fruit));
         myClassArrayList.add(new myClass("Color Names","Learn about 10 Color Names",R.drawable.fruit));
@@ -25,8 +26,7 @@ public class learnMoreNames extends AppCompatActivity {
         myClassArrayList.add(new myClass("Birds Names","Learn about 10 Bird Names",R.drawable.fruit));
         myClassArrayList.add(new myClass("Insect Names","Learn about 10 Insect Names",R.drawable.fruit));
 
-        ListAdapter adapter=new ListAdapter(this,myClassArrayList);
-        ListView listview=findViewById(R.id.listview);
+        ListAdapter adapter=new ListAdapter(this,0, myClassArrayList);
         listview.setAdapter(adapter);
     }
 }

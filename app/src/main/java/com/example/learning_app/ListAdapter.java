@@ -14,8 +14,8 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter<myClass> {
-    public ListAdapter(Context context, ArrayList<myClass> myClassArrayList){
-        super(context,0,myClassArrayList);
+    public ListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<myClass> myClassArrayList){
+        super(context,resource,myClassArrayList);
     }
 
     @NonNull
@@ -26,9 +26,9 @@ public class ListAdapter extends ArrayAdapter<myClass> {
         ImageView imageview = convertView.findViewById(R.id.imageheading);
         TextView fruittv = convertView.findViewById(R.id.fruitnames);
         TextView subtv = convertView.findViewById(R.id.submsg);
-        imageview.setImageResource(myclass.imageid);
-        fruittv.setText(myclass.heading);
-        subtv.setText(myclass.subheading);
+        imageview.setImageResource(myclass.getImageid());
+        fruittv.setText(myclass.getHeading());
+        subtv.setText(myclass.getSubheading());
 
         return convertView;
     }
