@@ -16,11 +16,11 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/imageheading"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/fruit">
-            </ImageView>
+                android:src="@drawable/fruit"></ImageView>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
