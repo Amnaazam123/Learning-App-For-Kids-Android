@@ -15,27 +15,21 @@ import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter<myClass> {
     public ListAdapter(Context context, ArrayList<myClass> myClassArrayList){
-        super(context,R.layout.list_item,myClassArrayList);
+        super(context,0,myClassArrayList);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        myClass myclass=getItem(position);
-        if(convertView==null){
-            convertView= LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
-
-        }
+        myClass myclass = getItem(position);
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
         ImageView imageview = convertView.findViewById(R.id.imageheading);
-        TextView fruittv=convertView.findViewById(R.id.fruitnames);
-        TextView subtv=convertView.findViewById(R.id.submsg);
+        TextView fruittv = convertView.findViewById(R.id.fruitnames);
+        TextView subtv = convertView.findViewById(R.id.submsg);
         imageview.setImageResource(myclass.imageid);
         fruittv.setText(myclass.heading);
         subtv.setText(myclass.subheading);
 
-
-
-
-        return super.getView(position, convertView, parent);
+        return convertView;
     }
 }
