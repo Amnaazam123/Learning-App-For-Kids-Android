@@ -31,6 +31,6 @@ public class AlphabetsOrNames extends AppCompatActivity {
 
             }
         });
-        
+
     }
 }
