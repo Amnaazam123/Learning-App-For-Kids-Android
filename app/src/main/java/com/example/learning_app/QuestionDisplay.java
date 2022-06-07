@@ -39,14 +39,12 @@ public class QuestionDisplay extends AppCompatActivity {
     public void onRadioButtonClicked(View v) {
         switch(msg) {
             case "1":
-                switch (v.getId()){
-                    case R.id.op1:
-                        tv.setText("Correct answer!");
-                        tv.setTextColor(Color.parseColor("#006400"));
-                        break;
-                    default:
-                        tv.setText("Wrong answer!");
-                        tv.setTextColor(Color.parseColor("#8B0000"));
+                if (v.getId() == R.id.op1) {
+                    tv.setText("Correct answer!");
+                    tv.setTextColor(Color.parseColor("#006400"));
+                } else {
+                    tv.setText("Wrong answer!");
+                    tv.setTextColor(Color.parseColor("#8B0000"));
                 }
                 break;
             case "2":

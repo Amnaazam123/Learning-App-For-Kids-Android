@@ -22,7 +22,7 @@ public class ListAdapter extends ArrayAdapter<myClass> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         myClass myclass = getItem(position);
-        convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.items_views,parent,false);
         ImageView imageview = convertView.findViewById(R.id.imageheading);
         TextView fruittv = convertView.findViewById(R.id.fruitnames);
         TextView subtv = convertView.findViewById(R.id.submsg);

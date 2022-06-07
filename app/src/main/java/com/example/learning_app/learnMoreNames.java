@@ -15,7 +15,7 @@ public class learnMoreNames extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_more_names);
         listview=findViewById(R.id.listview);
-        ArrayList<myClass> myClassArrayList = new ArrayList<myClass>();
+        ArrayList<myClass> myClassArrayList = new ArrayList<>();
         myClassArrayList.add(new myClass("Fruit Names","Learn about 10 Fruit Names",R.drawable.fruit));
         myClassArrayList.add(new myClass("Color Names","Learn about 10 Color Names",R.drawable.fruit));
         myClassArrayList.add(new myClass("Body Parts Names","Learn about 10 Body Part Names",R.drawable.fruit));

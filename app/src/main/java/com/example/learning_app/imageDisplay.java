@@ -1,10 +1,9 @@
 package com.example.learning_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class imageDisplay extends AppCompatActivity {
 
@@ -15,7 +14,6 @@ public class imageDisplay extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         int res = extras.getInt("resourseInt");
         ImageView img = (ImageView) findViewById(R.id.output);
-        Intent intent = getIntent();
         img.setImageResource(res);
     }
 }

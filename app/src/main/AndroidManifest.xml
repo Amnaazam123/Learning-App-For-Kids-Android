@@ -16,6 +16,9 @@
             android:name=".QuestionDisplay"
             android:exported="false" />
         <activity
+            android:name=".learnMoreNames"
+            android:exported="false" />
+        <activity
             android:name=".Test"
             android:exported="false" />
         <activity

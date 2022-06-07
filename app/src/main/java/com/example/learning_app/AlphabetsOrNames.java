@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class AlphabetsOrNames extends AppCompatActivity {
@@ -17,20 +16,8 @@ public class AlphabetsOrNames extends AppCompatActivity {
         setContentView(R.layout.activity_alphabets_or_names);
         learnabc=findViewById(R.id.learnabc);
         learnnames=findViewById(R.id.learnnames);
-        learnabc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(AlphabetsOrNames.this, Alphabets.class));
-
-            }
-        });
-        learnnames.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(AlphabetsOrNames.this, learnMoreNames.class));
-
-            }
-        });
+        learnabc.setOnClickListener(view -> startActivity(new Intent(AlphabetsOrNames.this, Alphabets.class)));
+        learnnames.setOnClickListener(view -> startActivity(new Intent(AlphabetsOrNames.this, learnMoreNames.class)));
 
     }
 }
