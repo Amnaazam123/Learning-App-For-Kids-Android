@@ -98,21 +98,142 @@ public class learnMoreNames extends AppCompatActivity {
 
                 }
                 else if(myClassArrayList.get(i).heading=="Body Parts Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Body part Names", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1", "1 - Nose");
+                            intent.putExtra("name2", "2 - Eye");
+                            intent.putExtra("name3", "3 - Ear");
+                            intent.putExtra("name4", "4 - Hand");
+                            intent.putExtra("name5", "5 - Foot");
+                            intent.putExtra("name6", "6 - Finger");
+                            intent.putExtra("name7", "7 - Neck");
+                            intent.putExtra("name8", "8 - Arm");
+                            intent.putExtra("name9", "9 - Foot");
+                            intent.putExtra("name10", "10 - Tongue");
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
+                    
 
                 }
                 else if(myClassArrayList.get(i).heading=="Vegetable Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Vegetable Names", Toast.LENGTH_LONG).show();
+
+
+                            intent.putExtra("name1","Potato");
+                            intent.putExtra("name2","Tomato");
+                            intent.putExtra("name3","Carrot");
+                            intent.putExtra("name4","Garlic");
+                            intent.putExtra("name5","Onion");
+                            intent.putExtra("name6","Spanish");
+                            intent.putExtra("name7","Ginger");
+                            intent.putExtra("name8","Lady Finger");
+                            intent.putExtra("name9","Cabbage");
+                            intent.putExtra("name10","Pea");
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
 
                 }
                 else if(myClassArrayList.get(i).heading=="Animals Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Animal Names", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1","Lion");
+                            intent.putExtra("name2","Elephant");
+                            intent.putExtra("name3","Dog");
+                            intent.putExtra("name4","Cat");
+                            intent.putExtra("name5","Goat");
+                            intent.putExtra("name6","Fox");
+                            intent.putExtra("name7","Cow");
+                            intent.putExtra("name8","Zebra");
+                            intent.putExtra("name9","Tiger");
+                            intent.putExtra("name10","Buffalo");
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
 
                 }
                 else if(myClassArrayList.get(i).heading=="Flower Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Flower Names", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1", "1 - Rose");
+                            intent.putExtra("name2", "2 - Sunflower");
+                            intent.putExtra("name3", "3 - Lily");
+                            intent.putExtra("name4", "4 - Tulip");
+                            intent.putExtra("name5", "5 - Jasmine");
+                            intent.putExtra("name6", "6 - Iris");
+                            intent.putExtra("name7", "7 - Pancy");
+                            intent.putExtra("name8", "8 - Lotus");
+                            intent.putExtra("name9", "9 - Broom");
+                            intent.putExtra("name10", "10 - Aster");
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
 
                 }
                 else if(myClassArrayList.get(i).heading=="Birds Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Bird Names", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1", "Crow");
+                            intent.putExtra("name2", "Pigeon");
+                            intent.putExtra("name3", "Sparrow");
+                            intent.putExtra("name4", "Parrot");
+                            intent.putExtra("name5", "Eagle");
+                            intent.putExtra("name6", "Owl");
+                            intent.putExtra("name7", "peacock");
+                            intent.putExtra("name8", "Dove");
+                            intent.putExtra("name9", "Penguin");
+                            intent.putExtra("name10", "Duck");
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
 
                 }
                 else if(myClassArrayList.get(i).heading=="Insect Names"){
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Toast.makeText(getBaseContext(), "Showing Insect Names", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1","Ant");
+                            intent.putExtra("name2","Grass Hopper");
+                            intent.putExtra("name3","Butterfly");
+                            intent.putExtra("name4","Caterpillar");
+                            intent.putExtra("name5","Housefly");
+                            intent.putExtra("name6","Mosquito");
+                            intent.putExtra("name7","Cockroach");
+                            intent.putExtra("name8","Dragon Fly");
+                            intent.putExtra("name9","Lady Bird");
+                            intent.putExtra("name10","Snail");
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alertDialog=builder.create();
+                    alertDialog.show();
 
                 }
 
