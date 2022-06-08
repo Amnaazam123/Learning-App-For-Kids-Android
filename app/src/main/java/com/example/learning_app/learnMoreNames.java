@@ -207,6 +207,7 @@ public class learnMoreNames extends AppCompatActivity {
                             intent.putExtra("name8", "Dove");
                             intent.putExtra("name9", "Penguin");
                             intent.putExtra("name10", "Duck");
+                            startActivity(intent);
                         }
                     });
                     AlertDialog alertDialog=builder.create();
