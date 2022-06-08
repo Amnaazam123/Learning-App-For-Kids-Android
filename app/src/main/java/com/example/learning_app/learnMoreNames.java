@@ -56,6 +56,17 @@ public class learnMoreNames extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Toast.makeText(getBaseContext(),"Showing about", Toast.LENGTH_LONG).show();
+
+                            intent.putExtra("name1","1 - Apple");
+                            intent.putExtra("name2","2 - Banana");
+                            intent.putExtra("name3","3 - Mango");
+                            intent.putExtra("name4","4 - Orange");
+                            intent.putExtra("name5","5 - Cherry");
+                            intent.putExtra("name6","6 - Grapes");
+                            intent.putExtra("name7","7 - Peach");
+                            intent.putExtra("name8","8 - Water Melon");
+                            intent.putExtra("name9","9 - Pine Apple");
+                            intent.putExtra("name10","10 - Strawberry");
                             startActivity(intent);
                         }
                     });
@@ -89,3 +100,6 @@ public class learnMoreNames extends AppCompatActivity {
         });
     }
 }
+
+
+
